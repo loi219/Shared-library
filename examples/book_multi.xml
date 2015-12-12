@@ -1,0 +1,303 @@
+<?xml version="1.0" encoding="utf-8"?>
+<isbndb>
+  <current_page>1</current_page>
+  <data>
+    <author_data>
+      <id>sanders_william</id>
+      <name>Sanders, William</name>
+    </author_data>
+    <awards_text></awards_text>
+    <book_id>j_a03</book_id>
+    <dewey_decimal></dewey_decimal>
+    <dewey_normal>0</dewey_normal>
+    <edition_info></edition_info>
+    <isbn10>0759550123</isbn10>
+    <isbn13>9780759550124</isbn13>
+    <language>eng</language>
+    <lcc_number>PS3569</lcc_number>
+    <marc_enc_level></marc_enc_level>
+    <notes></notes>
+    <physical_description_text>325 p. ; 22 cm.</physical_description_text>
+    <publisher_id>ipublish_com</publisher_id>
+    <publisher_name>iPublish.com</publisher_name>
+    <publisher_text>New York, NY ; iPublish.com 2001.</publisher_text>
+    <subject_ids>science_fiction_fantasy_science_fiction_general</subject_ids>
+    <summary></summary>
+    <title>J</title>
+    <title_latin>J</title_latin>
+    <title_long></title_long>
+    <urls_text></urls_text>
+  </data>
+  <data>
+    <author_data>
+      <id>sanders_william</id>
+      <name>Sanders, William</name>
+    </author_data>
+    <awards_text></awards_text>
+    <book_id>j_a02</book_id>
+    <dewey_decimal>813</dewey_decimal>
+    <dewey_normal>813</dewey_normal>
+    <edition_info>Paperback; 2007-10-01</edition_info>
+    <isbn10>1934648140</isbn10>
+    <isbn13>9781934648148</isbn13>
+    <language></language>
+    <lcc_number></lcc_number>
+    <marc_enc_level>~</marc_enc_level>
+    <notes></notes>
+    <physical_description_text>6.1"x9.1"x0.7"; 0.8 lb; 280 pages</physical_description_text>
+    <publisher_id>norilana_books</publisher_id>
+    <publisher_name>Norilana Books</publisher_name>
+    <publisher_text>Norilana Books</publisher_text>
+    <subject_ids>science_fiction_fantasy_science_fiction_adventure</subject_ids>
+    <subject_ids>science_fiction_fantasy_science_fiction_general</subject_ids>
+    <subject_ids>science_fiction_fantasy_science_fiction_general_aas</subject_ids>
+    <summary>Three women in three worlds: Dr. Ann Lucas, former NASA scientist and now a drugged and helpless mental patient, in a reality almost but not quite our own. Mad Jack, one eyed gunwoman and lover of women, in a ruined and lawless wasteland world. Jay Younger, living in the here and now, known to her readers simply as Jay -- a science fiction writer whose literary career is on the brink of disaster, an alcoholic and emotional wreck. When the impossible becomes real and boundaries between worlds start to dissolve, the fates of these three tormented, brave and intense women come together in a remarkable and daring story that examines the basic nature of reality and of human identity. William Sanders was born in Arkansas in 1942 and served with the US Army Security Agency during the Vietnam War. He is the author of more than 20 published books and many stories and articles; his short fiction has been nominated for major awards, including the Hugo and Nebula, and has twice won the Sidewise Award for Alternate History. He lives in Oklahoma with his motorcycle and his dog. "Girl meets girl meets girl, and she is them. J. is a high-energy sprint across parallel realities. Did I mention that I'm in love with Mad Jack?" -- Susan R. Matthews, author of PRISONER OF CONSCIENCE and COLONY FLEET</summary>
+    <title>J.</title>
+    <title_latin>J.</title_latin>
+    <title_long></title_long>
+    <urls_text></urls_text>
+  </data>
+  <data>
+    <author_data>
+      <id>rahim_adatia</id>
+      <name>Rahim Adatia</name>
+    </author_data>
+    <author_data>
+      <id>bruno_jouhier</id>
+      <name>Bruno Jouhier</name>
+    </author_data>
+    <awards_text></awards_text>
+    <book_id>j_a01</book_id>
+    <dewey_decimal>005</dewey_decimal>
+    <dewey_normal>5</dewey_normal>
+    <edition_info>Paperback; 2002-02</edition_info>
+    <isbn10>1861007019</isbn10>
+    <isbn13>9781861007018</isbn13>
+    <language></language>
+    <lcc_number></lcc_number>
+    <marc_enc_level>~</marc_enc_level>
+    <notes></notes>
+    <physical_description_text>7.0"x8.8"x0.8"; 0.9 lb; 250 pages</physical_description_text>
+    <publisher_id>peer_information_inc</publisher_id>
+    <publisher_name>Peer Information Inc</publisher_name>
+    <publisher_text>Peer Information Inc.</publisher_text>
+    <subject_ids>computers_internet_programming_java</subject_ids>
+    <subject_ids>computers_internet_software</subject_ids>
+    <summary>This book aims to explain the role, usefulness and functionality of Microsoft's J# language and class libraries. The objective is to cover the ways J# can be used as a migration tool for Java programmers and Java code, a way of accessing class libraries similar to those provided by Java from .NET, and a way of programming .NET in a different language. J# is Microsoft's .NET upgrade of the J++ concept. J++ was a system that allowed developers to write COM-based Windows applications in the Java language, using a subset of the classes provided by the Java 1.1.4 platform. J# updates this to the .NET system, and provides a way to use the Java language and classes in the .NET environment. Programmers can develop ASP.NET web sites, web services, and Windows applications, using the J# language's Java-like syntax. This book is primarily Aimed at developers curious about J#, what it can and can't do, and in what circumstances it might be useful. Readers may be experienced in Java, or come from an entirely Microsoft/.NET background.</summary>
+    <title>J#</title>
+    <title_latin>J#</title_latin>
+    <title_long></title_long>
+    <urls_text></urls_text>
+  </data>
+  <data>
+    <author_data>
+      <id>durand_robert</id>
+      <name>Durand, Robert</name>
+    </author_data>
+    <awards_text></awards_text>
+    <book_id>j</book_id>
+    <dewey_decimal>811/.5/4</dewey_decimal>
+    <dewey_normal>811.54</dewey_normal>
+    <edition_info></edition_info>
+    <isbn10>0879220058</isbn10>
+    <isbn13>9780879220051</isbn13>
+    <language>eng</language>
+    <lcc_number>PS3554</lcc_number>
+    <marc_enc_level></marc_enc_level>
+    <notes>Poems.
+
+"Four hundred copies printed."</notes>
+    <physical_description_text>[41] p. 23 cm.</physical_description_text>
+    <publisher_id>christophers_books</publisher_id>
+    <publisher_name>Christopher's Books</publisher_name>
+    <publisher_text>[Santa Barbara, Calif.] Christopher's Books, 1971.</publisher_text>
+    <summary></summary>
+    <title>J</title>
+    <title_latin>J</title_latin>
+    <title_long></title_long>
+    <urls_text></urls_text>
+  </data>
+  <data>
+    <author_data>
+      <id>s_suraa</id>
+      <name>S. Suraa</name>
+    </author_data>
+    <awards_text></awards_text>
+    <book_id>j_j_a01</book_id>
+    <dewey_decimal></dewey_decimal>
+    <dewey_normal>0</dewey_normal>
+    <edition_info>Paperback; 2004-03-30</edition_info>
+    <isbn10>8187649267</isbn10>
+    <isbn13>9788187649267</isbn13>
+    <language></language>
+    <lcc_number></lcc_number>
+    <marc_enc_level>~</marc_enc_level>
+    <notes></notes>
+    <physical_description_text>5.4"x7.9"x0.4"; 0.6 lb; 192 pages</physical_description_text>
+    <publisher_id>katha</publisher_id>
+    <publisher_name>Katha</publisher_name>
+    <publisher_text>Katha</publisher_text>
+    <subject_ids>literature_fiction_contemporary</subject_ids>
+    <summary></summary>
+    <title>J.J.</title>
+    <title_latin>J.J.</title_latin>
+    <title_long></title_long>
+    <urls_text></urls_text>
+  </data>
+  <data>
+    <author_data>
+      <id>vanoosting_james</id>
+      <name>VanOosting, James</name>
+    </author_data>
+    <awards_text></awards_text>
+    <book_id>electing_j_j</book_id>
+    <dewey_decimal></dewey_decimal>
+    <dewey_normal>0</dewey_normal>
+    <edition_info></edition_info>
+    <isbn10>0374319995</isbn10>
+    <isbn13>9780374319991</isbn13>
+    <language>eng</language>
+    <lcc_number></lcc_number>
+    <marc_enc_level></marc_enc_level>
+    <notes></notes>
+    <physical_description_text>171 p. ; 21 cm.</physical_description_text>
+    <publisher_id>farrar_straus_giroux_a01</publisher_id>
+    <publisher_name>Farrar Straus Giroux</publisher_name>
+    <publisher_text>New York : Farrar Straus Giroux, 1990.</publisher_text>
+    <subject_ids>politics_fiction</subject_ids>
+    <summary></summary>
+    <title>Electing J. J</title>
+    <title_latin>Electing J. J</title_latin>
+    <title_long></title_long>
+    <urls_text></urls_text>
+  </data>
+  <data>
+    <author_data>
+      <id>harwood_ronald</id>
+      <name>Harwood, Ronald</name>
+    </author_data>
+    <awards_text></awards_text>
+    <book_id>j_j_farr</book_id>
+    <dewey_decimal></dewey_decimal>
+    <dewey_normal>0</dewey_normal>
+    <edition_info></edition_info>
+    <isbn10>0906399882</isbn10>
+    <isbn13>9780906399880</isbn13>
+    <language>eng</language>
+    <lcc_number></lcc_number>
+    <marc_enc_level></marc_enc_level>
+    <notes>Six men.</notes>
+    <physical_description_text>62p ; 19cm.</physical_description_text>
+    <publisher_id>amber_lane</publisher_id>
+    <publisher_name>Amber Lane</publisher_name>
+    <publisher_text>Oxford : Amber Lane, 1988.</publisher_text>
+    <summary></summary>
+    <title>J. J. Farr</title>
+    <title_latin>J. J. Farr</title_latin>
+    <title_long></title_long>
+    <urls_text></urls_text>
+  </data>
+  <data>
+    <awards_text></awards_text>
+    <book_id>j_krishnamurti_a02</book_id>
+    <dewey_decimal></dewey_decimal>
+    <dewey_normal>0</dewey_normal>
+    <edition_info>Paperback; 2004-06</edition_info>
+    <isbn10>8120820517</isbn10>
+    <isbn13>9788120820517</isbn13>
+    <language></language>
+    <lcc_number></lcc_number>
+    <marc_enc_level>~</marc_enc_level>
+    <notes></notes>
+    <physical_description_text>5.5"x8.4"x0.5"; 0.6 lb; 196 pages</physical_description_text>
+    <publisher_id>motilal_banarsidass</publisher_id>
+    <publisher_name>Motilal Banarsidass</publisher_name>
+    <publisher_text>Motilal Banarsidass</publisher_text>
+    <subject_ids>biographies_memoirs_general</subject_ids>
+    <subject_ids>nonfiction_philosophy_eastern_general</subject_ids>
+    <subject_ids>nonfiction_philosophy_general</subject_ids>
+    <subject_ids>religion_spirituality_other_eastern_religions_eastern_philos</subject_ids>
+    <summary>New study of a major world religious leader</summary>
+    <title>J. Krishnamurti</title>
+    <title_latin>J. Krishnamurti</title_latin>
+    <title_long></title_long>
+    <urls_text></urls_text>
+  </data>
+  <data>
+    <author_data>
+      <id>shearer_harry</id>
+      <name>Shearer, Harry</name>
+    </author_data>
+    <author_data>
+      <id>peter_matz</id>
+      <name>Peter Matz</name>
+    </author_data>
+    <author_data>
+      <id>leopold_tom</id>
+      <name>Leopold, Tom</name>
+    </author_data>
+    <awards_text></awards_text>
+    <book_id>j_edgar</book_id>
+    <dewey_decimal>812</dewey_decimal>
+    <dewey_normal>812</dewey_normal>
+    <edition_info>Preloaded Digital Audio Player; 2008-06</edition_info>
+    <isbn10>1605149837</isbn10>
+    <isbn13>9781605149837</isbn13>
+    <language></language>
+    <lcc_number></lcc_number>
+    <marc_enc_level>~</marc_enc_level>
+    <notes></notes>
+    <physical_description_text>6.2"x7.9"x1.2"; 0.4 lb</physical_description_text>
+    <publisher_id>playaway</publisher_id>
+    <publisher_name>Playaway</publisher_name>
+    <publisher_text>Playaway</publisher_text>
+    <subject_ids>literature_fiction_drama_united_states</subject_ids>
+    <subject_ids>literature_fiction_drama_general</subject_ids>
+    <summary>J. Edgar Hoover was privy to everyone else's secrets as head of the FBI. This campy musical reveals everything about his bizarre obsessions and quirks.</summary>
+    <title>J. Edgar!</title>
+    <title_latin>J. Edgar!</title_latin>
+    <title_long></title_long>
+    <urls_text></urls_text>
+  </data>
+  <data>
+    <author_data>
+      <id>l_divine</id>
+      <name>L. Divine</name>
+    </author_data>
+    <awards_text></awards_text>
+    <book_id>lady_j</book_id>
+    <dewey_decimal></dewey_decimal>
+    <dewey_normal>0</dewey_normal>
+    <edition_info></edition_info>
+    <isbn10>0758225342</isbn10>
+    <isbn13>9780758225344</isbn13>
+    <language>eng</language>
+    <lcc_number></lcc_number>
+    <marc_enc_level></marc_enc_level>
+    <notes>"Dafina books."</notes>
+    <physical_description_text>214 p. ; 21 cm.</physical_description_text>
+    <publisher_id>kensington_publishing_corp</publisher_id>
+    <publisher_name>Kensington Publishing Corp</publisher_name>
+    <publisher_text>New York : Kensington Publishing Corp., c2008.</publisher_text>
+    <subject_ids>childrens_books_people_places_multicultural_stories_african_</subject_ids>
+    <subject_ids>childrens_books_issues</subject_ids>
+    <subject_ids>teens_social_issues_being_a_teen</subject_ids>
+    <subject_ids>jackson_jayd_fictitious_character_fiction</subject_ids>
+    <subject_ids>south_bay_high_imaginary_organization_fiction</subject_ids>
+    <subject_ids>african_american_high_school_students_california_los_angeles</subject_ids>
+    <subject_ids>young_adult_fiction</subject_ids>
+    <subject_ids>african_americans_fiction</subject_ids>
+    <subject_ids>interpersonal_relations_fiction</subject_ids>
+    <subject_ids>high_schools_fiction</subject_ids>
+    <subject_ids>schools_fiction</subject_ids>
+    <subject_ids>school_stories</subject_ids>
+    <summary>Her relationship with now ex-boyfriend Jeremy behind her, Jayd realizes drama is just a never-ending part of daily life. Even so, she's reached here limit, battling with her new boss, jealousies at school, and tensions at home. To deal with it all, Jayd is ready to give her attention to her legacy as one in a long line of conjure women. But that legacy comes with a line of rivals too--and a couple of them are much to close to home.</summary>
+    <title>Lady J</title>
+    <title_latin>Lady J</title_latin>
+    <title_long></title_long>
+    <urls_text></urls_text>
+  </data>
+  <index_searched>title</index_searched>
+  <page_count>1618</page_count>
+  <result_count>16177</result_count>
+</isbndb>

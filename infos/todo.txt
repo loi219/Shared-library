@@ -1,0 +1,42 @@
+Table livre
+	id_livre
+	titre
+	editeur
+	ISBN
+	annee
+	nbre_page
+	description
+	4_couv
+	langue
+	proprietaire
+	lecteur
+	theme
+
+
+Table auteur
+	id_auteur
+	nom
+	prenom
+	date_naissance
+	date_mort
+	bio
+
+Table utilisateur
+	id_user
+	pseudo
+
+
+1. Affichage des livres
+	Ajouter livres utilisateur
+2.Utilisateurs
+	Création inscription
+	Création accès
+	Emprunter des livres
+	Prêter des livres
+	Formulaire de demande de prêt
+	Historique des lecteurs
+3. Elargir la fiche du livre
+	Notes
+	Critiques
+	Conseils
+	Recommendations
