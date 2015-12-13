@@ -10,13 +10,13 @@ function __construct($arrayBooks){
 
 
 $this->showValuesBooks($arrayBooks);
-    $this->createQuery($_POST['id']);
+
 
 }
 
 
     function createQuery($arrayBookValue){
-
+echo $arrayBookValue;
        $query="INSERT INTO books(title) VALUES ('$arrayBookValue')";
     $this->addBook($query);
 
@@ -60,47 +60,62 @@ echo $query;
         }
     }
 private function showValuesBooks($array){
+    echo $_POST['title'];
+    /**
+     * $title = $arrayValues['title'];
 
+    $publisher = $arrayValues['publisher'];
+    $author = $arrayValues['author'];
+    $resume = $arrayValues['resume'];
+    $isbn = $arrayValues['isbn'];
+    $language = $arrayValues['language'];
+    $date = $arrayValues['date'];
+    $owner = $arrayValues['owner'];
+    $pages = $arrayValues['pages'];
+     */
 ?>
 
 
-<div class="row">
-    <div class="col-lg-12">
-
-    <select>
-<?php foreach($array as $book){ ?>
-        <option value="<?php echo "1" ?>"><?php echo $book['title']; }?></option>
-
-    </select>
-        <button class="triggerClass" id="<?php echo $book['title']; ?>">Ajouter</button>
-
-        <?php
+    <div class="row">
+        <div class="col-lg-12">
+            <table class="table" id="table">
+                <thead>
 
 
-        ?>
+                <tr>
 
+                    <th>Titre</th>
+                    <th>Editeur</th>
+                    <th>Auteur</th>
+                    <th>ISBN</th>
+                </tr>
+                </thead>
+                <tbody>
+
+
+                <?php foreach($array as $book){?>
+                <form method="POST" action="#">
+                <tr>
+
+                    <td name="title" value="title"><?php echo $book['title']; ?></td>
+                    <td name="publisher"><?php echo $book['publisher']; ?></td>
+                    <td name="author" ><?php echo $book['author']; ?></td>
+                    <td name="isbn"><?php echo $book['isbn']; ?></td>
+
+                    <td><button type="submit">Ajouter</button></td>
+<?php } ?>
+                    </form>
+                </tr>
+
+
+
+                </tbody>
+            </table>
+            <hr>
+        </div>
     </div>
-</div>
-<script>
 
-    $(document).ready(function(){
-        $(".triggerClass").click(function(){
-
-            var yourId = $(this).attr("id");
-            alert(yourId);
-
-            $.ajax({
-                url: "/books/AddBook.php",
-                method: "GET",
-                data: { id : yourId },
-                dataType: "html"
-            });
-
-
-        });
-    });
-
-
-</script>
+    <script src="/lib/JS/jquery-2.1.4.min.js"></script>
+    <script src="/lib/bootstrap/js/bootstrap.min.js"></script>
 
 <?php } }?>
