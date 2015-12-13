@@ -206,7 +206,7 @@ $this->showBooks();
             var yourId = $(this).attr("id");
 
          $.ajax({
-                url: "/books/SearchBooks.php",
+                url: "/books/AddBook.php",
                 method: "POST",
                 data: { id : yourId },
                 dataType: "html"
@@ -260,15 +260,7 @@ $this->showBooks();
 
         new AddBook($this->arrayBooks);
 
-
-
     }
-
-    private function getBookArray($index){
-if(isset($_POST['id'])) {
-    echo $index;
-
-}
 
 
     }
@@ -329,13 +321,6 @@ if(isset($_POST['id'])) {
 
     }
 
-    function updateBook()
-    {
-
-    }
-
-
-}
 
 
 

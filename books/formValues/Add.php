@@ -2,7 +2,7 @@
 error_reporting(E_ALL);
 ini_set("display_errors", 1);
 include($_SERVER["DOCUMENT_ROOT"]."/head_foot/header.php");
-//include($_SERVER["DOCUMENT_ROOT"]."/head_foot/footer.php");
+
 
 
 require($_SERVER["DOCUMENT_ROOT"] . "/DB/Database.php");
