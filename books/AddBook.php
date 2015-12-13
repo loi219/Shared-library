@@ -97,7 +97,7 @@ private function showValuesBooks($array){
                 <form method="POST" action="#">
                 <tr>
 
-                    <td name="title" value="title"><?php echo $book['title']; ?></td>
+                    <td name="title" value=""><?php echo $book['title']; ?></td>
                     <td name="publisher"><?php echo $book['publisher']; ?></td>
                     <td name="author" ><?php echo $book['author']; ?></td>
                     <td name="isbn"><?php echo $book['isbn']; ?></td>
