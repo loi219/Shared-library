@@ -1,47 +1,67 @@
 <?php
-include($_SERVER["DOCUMENT_ROOT"]."/head_foot/footer.php");
-error_reporting(E_ALL);
-ini_set("display_errors", 1);
+require($_SERVER["DOCUMENT_ROOT"] . "/DB/Database.php");
+require($_SERVER["DOCUMENT_ROOT"] . "/books/SearchBooks.php");
 
-class AddBook{
+class AddBook
+{
+    function __construct()
+    {
+$this->sendRequest();
 
 
-function __construct($arrayBooks){
+    }
+function sendRequest(){
 
-
-$this->showValuesBooks($arrayBooks);
+$search=new SearchBooks();
+    $this->createQuery($search->getArrayData($_POST['isbn'],'isbn'));
 
 
 }
+    function createQuery($arrayValues)
+    {
 
+        foreach($arrayValues as $array) {
 
-    function createQuery($arrayBookValue){
-echo $arrayBookValue;
-       $query="INSERT INTO books(title) VALUES ('$arrayBookValue')";
-    $this->addBook($query);
+            $title = $array['title'];
 
-        /** $bookValidation $bookValidation = new SearchBooks();
+            $publisher = $array['publisher'];
+            $author = $array['author'];
+            $resume = $array['resume'];
+            $isbn = $array['isbn'];
+            $language = $array['language'];
+            $date = $array['date'];
+            $owner = $array['owner'];
+            $pages = $array['pages'];
 
-        $date= time();
-        $isbn=$arrayBookValue['isbn'];
-        $title=$arrayBookValue['title'];
-        $author=$arrayBookValue['author'];
-        $owner = $_SESSION['user'];
+            if ($this->bookAlreadyAdded($owner, $isbn) == false) {
+                $query = "INSERT INTO books (title,isbn,publisher,author,pages,languageB,date_added,fk_owner,resume) VALUES('$title','$isbn','$publisher','$author','$pages','$language','$date','$owner','$resume')";
 
-        if ($bookValidation->bookAlreadyAdded($owner, $isbn) == false) {
-            $query = "INSERT INTO books (title,isbn,author,date_added,fk_owner) VALUES('$title','$isbn','$author','$date','$owner')";
+                $this->addBook($query, $title);
 
+            } else {
+                echo "<p>Livre $title déjà ajouté</p>";
 
-            $bookValidation->addBook($query, $title);
-
-        } else {
-            echo "<p>Livre $title déjà ajouté</p>";
-
-        } **/
-
+            }
+        }
     }
 
+    private function bookAlreadyAdded($owner, $isbn)
+    {
+        $db = new Database();
 
+        $queryControl = "SELECT title,isbn,fk_owner FROM books WHERE isbn='$isbn'";
+        $arrayBook = $db->select($queryControl);
+
+        if (sizeof($arrayBook) > 0) {
+            if ($arrayBook[0]['isbn'] == $isbn && $arrayBook[0]['fk_owner'] == $owner) {
+
+                return true;
+            } else {
+
+                return false;
+            }
+        }
+    }
     function addBook($query)
     {
 
@@ -52,70 +72,16 @@ echo $arrayBookValue;
             echo $db->error();
 
         } else {
-echo $query;
+
             $db->query($query);
-
-
 
         }
     }
-private function showValuesBooks($array){
-    echo $_POST['title'];
-    /**
-     * $title = $arrayValues['title'];
 
-    $publisher = $arrayValues['publisher'];
-    $author = $arrayValues['author'];
-    $resume = $arrayValues['resume'];
-    $isbn = $arrayValues['isbn'];
-    $language = $arrayValues['language'];
-    $date = $arrayValues['date'];
-    $owner = $arrayValues['owner'];
-    $pages = $arrayValues['pages'];
-     */
+
+}
+
+
 ?>
 
 
-    <div class="row">
-        <div class="col-lg-12">
-            <table class="table" id="table">
-                <thead>
-
-
-                <tr>
-
-                    <th>Titre</th>
-                    <th>Editeur</th>
-                    <th>Auteur</th>
-                    <th>ISBN</th>
-                </tr>
-                </thead>
-                <tbody>
-
-
-                <?php foreach($array as $book){?>
-                <form method="POST" action="#">
-                <tr>
-
-                    <td name="title" value=""><?php echo $book['title']; ?></td>
-                    <td name="publisher"><?php echo $book['publisher']; ?></td>
-                    <td name="author" ><?php echo $book['author']; ?></td>
-                    <td name="isbn"><?php echo $book['isbn']; ?></td>
-
-                    <td><button type="submit">Ajouter</button></td>
-<?php } ?>
-                    </form>
-                </tr>
-
-
-
-                </tbody>
-            </table>
-            <hr>
-        </div>
-    </div>
-
-    <script src="/lib/JS/jquery-2.1.4.min.js"></script>
-    <script src="/lib/bootstrap/js/bootstrap.min.js"></script>
-
-<?php } }?>

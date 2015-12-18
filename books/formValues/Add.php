@@ -3,11 +3,9 @@ error_reporting(E_ALL);
 ini_set("display_errors", 1);
 include($_SERVER["DOCUMENT_ROOT"]."/head_foot/header.php");
 
-
-
 require($_SERVER["DOCUMENT_ROOT"] . "/DB/Database.php");
 require("../SearchBooks.php");
-require("../AddBook.php");
+require($_SERVER["DOCUMENT_ROOT"]."/view/addBook.php");
 
 class Add
 {
@@ -27,35 +25,22 @@ class Add
 
             $this->ifSetGetToAdd();
         }
-        if (isset($_POST['id'])) {
-
-            $searchBook->chooseArrayBook($_POST['id']);
-
-
-        }
-
 
     }
 
     function ifSetGetToAdd()
     {
-        $searchBook = new SearchBooks();
+
 
         if (isset($_GET['s'])) {
 
-            $searchBook->setChoice($_GET['s']);
+            new AddBookView();
 
 
         }
 
 
     }
-    private function temp(){
-
-
-        echo $_GET['id'];
-    }
-
 
 }
 
