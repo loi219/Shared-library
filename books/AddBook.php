@@ -1,47 +1,67 @@
 <?php
-include($_SERVER["DOCUMENT_ROOT"]."/head_foot/footer.php");
-error_reporting(E_ALL);
-ini_set("display_errors", 1);
+require($_SERVER["DOCUMENT_ROOT"] . "/DB/Database.php");
+require($_SERVER["DOCUMENT_ROOT"] . "/books/SearchBooks.php");
 
-class AddBook{
+class AddBook
+{
+    function __construct()
+    {
+$this->sendRequest();
 
-
-function __construct($arrayBooks){
-
-
-$this->showValuesBooks($arrayBooks);
-    $this->createQuery($_POST['id']);
-
-}
-
-
-    function createQuery($arrayBookValue){
-
-       $query="INSERT INTO books(title) VALUES ('$arrayBookValue')";
-    $this->addBook($query);
-
-        /** $bookValidation $bookValidation = new SearchBooks();
-
-        $date= time();
-        $isbn=$arrayBookValue['isbn'];
-        $title=$arrayBookValue['title'];
-        $author=$arrayBookValue['author'];
-        $owner = $_SESSION['user'];
-
-        if ($bookValidation->bookAlreadyAdded($owner, $isbn) == false) {
-            $query = "INSERT INTO books (title,isbn,author,date_added,fk_owner) VALUES('$title','$isbn','$author','$date','$owner')";
-
-
-            $bookValidation->addBook($query, $title);
-
-        } else {
-            echo "<p>Livre $title déjà ajouté</p>";
-
-        } **/
 
     }
+function sendRequest(){
+
+$search=new SearchBooks();
+    $this->createQuery($search->getArrayData($_POST['isbn'],'isbn'));
 
 
+}
+    function createQuery($arrayValues)
+    {
+
+        foreach($arrayValues as $array) {
+
+            $title = $array['title'];
+
+            $publisher = $array['publisher'];
+            $author = $array['author'];
+            $resume = $array['resume'];
+            $isbn = $array['isbn'];
+            $language = $array['language'];
+            $date = $array['date'];
+            $owner = $array['owner'];
+            $pages = $array['pages'];
+
+            if ($this->bookAlreadyAdded($owner, $isbn) == false) {
+                $query = "INSERT INTO books (title,isbn,publisher,author,pages,languageB,date_added,fk_owner,resume) VALUES('$title','$isbn','$publisher','$author','$pages','$language','$date','$owner','$resume')";
+
+                $this->addBook($query, $title);
+
+            } else {
+                echo "<p>Livre $title déjà ajouté</p>";
+
+            }
+        }
+    }
+
+    private function bookAlreadyAdded($owner, $isbn)
+    {
+        $db = new Database();
+
+        $queryControl = "SELECT title,isbn,fk_owner FROM books WHERE isbn='$isbn'";
+        $arrayBook = $db->select($queryControl);
+
+        if (sizeof($arrayBook) > 0) {
+            if ($arrayBook[0]['isbn'] == $isbn && $arrayBook[0]['fk_owner'] == $owner) {
+
+                return true;
+            } else {
+
+                return false;
+            }
+        }
+    }
     function addBook($query)
     {
 
@@ -52,55 +72,16 @@ $this->showValuesBooks($arrayBooks);
             echo $db->error();
 
         } else {
-echo $query;
+
             $db->query($query);
-
-
 
         }
     }
-private function showValuesBooks($array){
+
+
+}
+
 
 ?>
 
 
-<div class="row">
-    <div class="col-lg-12">
-
-    <select>
-<?php foreach($array as $book){ ?>
-        <option value="<?php echo "1" ?>"><?php echo $book['title']; }?></option>
-
-    </select>
-        <button class="triggerClass" id="<?php echo $book['title']; ?>">Ajouter</button>
-
-        <?php
-
-
-        ?>
-
-    </div>
-</div>
-<script>
-
-    $(document).ready(function(){
-        $(".triggerClass").click(function(){
-
-            var yourId = $(this).attr("id");
-            alert(yourId);
-
-            $.ajax({
-                url: "/books/AddBook.php",
-                method: "GET",
-                data: { id : yourId },
-                dataType: "html"
-            });
-
-
-        });
-    });
-
-
-</script>
-
-<?php } }?>
