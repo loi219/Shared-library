@@ -29,13 +29,14 @@ function getArrayData($searchString,$type){
         switch ($type){
 
             case 'search':
-                //$url="http://isbndb.com/api/v2/xml/2E137ZRR/books?q=".$searchString;
-                $url = "http://127.0.0.1/examples/book_multi.xml";
+                $url="http://isbndb.com/api/v2/xml/2E137ZRR/books?q=".$searchString;
+                //$url = "http://127.0.0.1/examples/book_multi.xml";
                 break;
 
             case 'isbn':
                 //TODO Get ISBN URL FROM API
-                $url = "http://127.0.0.1/examples/book.xml";
+                $url="http://isbndb.com/api/v2/xml/2E137ZRR/book/$searchString";
+                //$url = "http://127.0.0.1/examples/book.xml";
                 break;
         }
 
@@ -114,7 +115,6 @@ function getArrayData($searchString,$type){
     private function consctructArrayBooks($title, $isbn, $publisher, $author, $pages, $language, $resume)
     {
 
-
         $arrayBook['title'] = $title;
         $arrayBook['publisher'] = $publisher;
         $arrayBook['author'] = $author;
@@ -133,29 +133,7 @@ function getArrayData($searchString,$type){
     }
 
 
-    function addBook($query, $title)
-    {
 
-        $db = new Database();
-
-
-        if ($db->error()) {
-            echo $db->error();
-
-        } else {
-
-            $db->query($query);
-
-            echo('<div class="alert alert-success fade in">
-                          <a href="#" class="close" data-dismiss="alert">&times;</a>
-                          Livre <strong>' . $title . '</strong> ajouté dans la collection.
-                    </div>');
-
-
-        }
-
-
-    }
 }
 
 
