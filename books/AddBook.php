@@ -1,13 +1,12 @@
 <?php
 require($_SERVER["DOCUMENT_ROOT"] . "/DB/Database.php");
 require($_SERVER["DOCUMENT_ROOT"] . "/books/SearchBooks.php");
-
+session_start();
 class AddBook
 {
     function __construct()
     {
 $this->sendRequest();
-
 
     }
 function sendRequest(){
@@ -81,7 +80,7 @@ $search=new SearchBooks();
 
 }
 
-
+new AddBook();
 ?>
 
 
