@@ -18,7 +18,7 @@ class Add
 
     function whatIsSet()
     {
-        $searchBook = new SearchBooks();
+
 
 
         if (isset($_GET['s'])) {

@@ -33,10 +33,6 @@ class AddBookView{
 
 
         ?>
-<div class="alert alert-success fade in" style="visibility: hidden" id="added">
-                          <a href="#"  data-dismiss="alert">&times;</a>
-                          Livre ajouté dans la collection.
-                </div>
         <div class="row">
             <div class="col-lg-12">
                 <table class="table" id="table">
@@ -63,7 +59,7 @@ class AddBookView{
                         <td name="author" ><?php echo $book['author']; ?></td>
                         <td name="isbn"><?php echo $book['isbn']; ?></td>
 
-                        <td><button class="triggerClass" id="<?php echo $book['isbn']; ?>">Ajouter</button></td>
+                        <td><input type="button" class="triggerClass" onmousedown="this.style.background='#41A317'" id="<?php echo $book['isbn'];  ?>" value="Ajouter" onclick="return added(this)"></td>
                         <?php } ?>
 
                     </tr>
@@ -79,9 +75,18 @@ class AddBookView{
         <script src="/lib/JS/jquery-2.1.4.min.js"></script>
 
         <script>
+
+        function added(button){
+
+        button.value="Ajouté!";
+
+
+        }
+
+
             $(document).ready(function(){
                 $(".triggerClass").click(function(){
-document.getElementById("added").style.visibility = "visible";
+
 
                     var yourId = $(this).attr("id");
 
