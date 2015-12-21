@@ -13,7 +13,7 @@ include($_SERVER["DOCUMENT_ROOT"] . "/head_foot/footer.php");
      <div class="row">
                 <div class="col-lg-6 col-sm-6 col-sx-6">
                     <div class="input-group">
-                        <input class="form-control" type="text" name="s">
+                        <input  type="text" name="s">
                 <span class="input-group-btn">
                   <button class="btn btn-default" type="submit" data-original-title="" title="">Rechercher</button>
                 </span>
